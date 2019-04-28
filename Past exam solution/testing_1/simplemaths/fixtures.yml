@@ -1,0 +1,11 @@
+# Test 1.1. fixtures
+- input: 2
+  answer: 4
+- input: 5
+  answer: 25
+- input: 1
+  answer: 1
+- input: a
+  answer: 1
+- input: c
+  answer: b
