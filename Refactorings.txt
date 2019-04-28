@@ -1,0 +1,61 @@
+Smell: Raw numbers appear in your code -> define vars
+
+Smell: Fragments of repeated code appear. -> use functions
+
+Smell: Code needs a comment to explain what it is for. -> explanatory names
+
+Smell: An expression becomes long.
+
+Smell: Loop variable is an integer from 1 to something. -> for row in data manipulate row
+
+Smell: It feels like surely someone else must have done this at some point. -> libraries
+
+Smell: A function needs to work corresponding indices of several arrays -> use dicts/keywords not data[i] but data['angle']
+
+Smell: You need to change your code file to explore different research scenarios. -> fixtures files (DRY)
+
+Smell: Two neighbouring loops have the same for statement -> merge repeated code
+
+Break a large function into smaller units
+	Smell: A function or subroutine no longer fits on a page in your editor.
+	Smell: A line of code is indented more than three levels.
+	Smell: A piece of code interacts with the surrounding code through just a few variables.
+
+
+Smell: You find it hard to locate a piece of code.
+Smell: You get a lot of version control conflicts.
+
+
+
+Refactoring Summary
+	Replace magic numbers with constants
+	Replace repeated code with a function
+	Change of variable/function/class name
+	Replace loop with iterator
+	Replace hand-written code with library code
+	Replace set of arrays with array of structures
+	Replace constants with a configuration file
+	Replace global variables with function arguments
+	Break a large function into smaller units
+	Separate code concepts into files or modules
+	
+	
+	
+	
+	
+Object Oriented Refactoring Summary
+	Replace ad-hoc structure with a class
+	Replace function with a method
+	Replace method argument with class member
+	Replace global variable with class data
+
+
+
+
+
+
+
+
+
+
+	
