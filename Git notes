@@ -1,0 +1,42 @@
+Dont use Dropbox/google for code backup.
+
+Centralised version control system => all hosted on a website centrally (1 copy of software). All commits copied on the same server. Commit => connected to web
+
+Distributed version control system e.g. Git. every copy of a repo is complete (a copy of the repo -> all repo). Can commit without internet connection: send to the server when connected
+	- there is no main repository
+	- if multiple users update a file in repo, all commits loged; the copy on the web is the 'agreed' final version
+	!!! every copy of a repo is complete
+	- repos are remote (e.g. on Cloud)
+
+GitHub offers private repos
+
+Cannot add own files to other ppl's repos if not collaborating. Raise an issue (ticket) and suggest changes to some1's code e.g. there's a bug, etc 
+
+Branching - in commit log, there is "master" (can change the name). Branches enable management of different concurent modes of developement (e.g. 10 devs working on 10 branches).
+	- create branch whose name starts with the issue number
+	- master: main branch with golden copy of code
+	- feature branches: code & commit; work in progress; not editing master branch even when pused to server (since branches are independent)
+	- then push changes to server. master and feature branches are not different! master is the golden copy by convention
+
+Solve issues: create new branch with issue number as name, fix the issue and push it. Do this if not changing master of original autorh who has the issue => PULL REQUEST:
+	- i fixed ur issue in my fork (cloned ur repo in new branch in my git) -> pull this solution from my repo (merge my code)? (pull request)
+
+Cloning: copy
+Forking: also have write permissions, can contribute back. Open pull request for them to see how you solved their issue. They can merge your solution then.
+ - this helps with bug fixes, code development
+ - don't reimplement some library, update it with Forking
+
+There is a hidden .git folder with all history & code. If deleted -> lose historical version
+
+Files can be removed from Staging Area (e.g. via git add . ) before commiting (git reset file.txt). Can do
+- git commit -a -m "description" to commit all files from staging area
+OR
+- git commit -m [file_name] to commit a single file
+OR
+- use git squash command to commit multiple files
+
+Every commit has a hash code = ssh5 encoding of file
+
+git add = staging area
+git commit = chg file locally
+git push = push commited file to git servers
