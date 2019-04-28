@@ -1,0 +1,69 @@
+# Test 1.1. fixtures
+- lower: [A, antiB, C, A]
+  upper: [antiA, antiC, antiA, Giorgio]
+  answer: (['antiB'], ['Giorgio'], 3)
+- lower: [A, antiB, C, A]
+  upper: ['', antiC, antiA, Giorgio]
+  answer: (['A', 'antiB'], ['', 'Giorgio'], 2)
+- lower: [A, '', C, A]
+  upper: [A, antiC, antiA, Giorgio]
+  answer: (['A', ''], ['A', 'Giorgio'], 2)
+- lower: [A, '', C, A]
+  upper: [A, antiC, antiA, Giorgio, '']
+  answer: (['A', ''], ['A', 'Giorgio', ''], 2)
+- lower: [A, antiB, C]
+  upper: [antiK, antiP, antiD, X]
+  answer: (['A', 'antiB', 'C'], ['antiK', 'antiP', 'antiD', 'X'], 0)
+- lower: [A]
+  upper: []
+  answer: (['A'], [], 0)
+- lower: []
+  upper: [A]
+  answer: ([], ['A'], 0)
+- lower: []
+  upper: []
+  answer: ([], [], 0)
+  
+# Test 1.2. fixtures
+- lower: [A, antiB]
+- upper: [A, antiB]
+- banana
+- lower: banana
+  upper: 25
+- lower: 25
+  upper: [A, antiB]
+- lower: [A, antiB]
+  middle: [P]
+  upper: [antiA, g]
+
+# Test 3.1. fixtures
+- subst1: a
+  subst2: antia
+- subst1: antia
+  subst2: a
+- subst1: a
+  subst2: antiantiantia
+- subst1: antiantia
+  subst2: antia
+- subst1: antiantia
+  subst2: antiantiantia
+  
+# Test 3.2. fixtures
+- subst1: a
+  subst2: suba  
+- subst1: suba
+  subst2: subsubsubsuba
+
+# Test 3.3. fixtures
+- subst1: ['not sure why']
+  subst2: antiantiantia
+- subst1: [953]
+  subst2: antiantiantia
+- subst1: 
+  subst2: antiantiantia
+- subst1: p
+  subst2:
+
+# Test 4. fixtures  
+- lower: [A, antiB, C, X, X, X, X]
+  upper: [antiA, antiC, antiA, Giorgio, antiX, antiA]
